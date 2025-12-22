@@ -1,0 +1,9 @@
+==> If we run command below command what will be the output
+$ date|echo "today is"
+
+[dprabhu@dentestmgmtutil01 scripts]$ date | echo "today is"
+today is
+
+==> It only output the echo statement
+==> date command sends the output to stdin so pipe command does not send the output of date command to the second command.
+==> 
