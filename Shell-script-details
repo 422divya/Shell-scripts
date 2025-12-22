@@ -13,3 +13,13 @@ today is
 
 ==> -F" " sets the field separator to a space, so each line is split into fields wherever a space occurs.
 ==> '{print $1}' tells awk to print the first field ($1) from each line
+
+3- set -e in shell script
+==>It exists the script when there is error. But it will not error out when there is pipe. 
+==> When we have pipe command used it will just check the last command.
+Example  echo test| abc >> for this script will error out
+echo test| abc |df -h >> for this script will not error out even when abc is not valid command. So when pipe is used it just checks the last command in pipe.
+
+==> So for that we need to use below set -o pipefail
+
+==> So whenever using "set -e" use "set -o pipeline"
