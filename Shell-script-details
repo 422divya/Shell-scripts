@@ -1,4 +1,4 @@
-==> If we run command below command what will be the output
+1- If we run command below command what will be the output
 $ date|echo "today is"
 
 [dprabhu@dentestmgmtutil01 scripts]$ date | echo "today is"
@@ -7,3 +7,9 @@ today is
 ==> It only output the echo statement
 ==> date command sends the output to stdin so pipe command does not send the output of date command to the second command.
 ==> pipe does not receives the output from the default command
+
+
+2- awk -F" " '{print $1}'
+
+==> -F" " sets the field separator to a space, so each line is split into fields wherever a space occurs.
+==> '{print $1}' tells awk to print the first field ($1) from each line
