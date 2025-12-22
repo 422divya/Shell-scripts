@@ -6,4 +6,4 @@ today is
 
 ==> It only output the echo statement
 ==> date command sends the output to stdin so pipe command does not send the output of date command to the second command.
-==> 
+==> pipe does not receives the output from the default command
